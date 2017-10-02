@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31F010471F82A35300BCDAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F010461F82A35300BCDAAE /* AppDelegate.swift */; };
+		31F010491F82A35300BCDAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F010481F82A35300BCDAAE /* ViewController.swift */; };
+		31F0104C1F82A35300BCDAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F0104A1F82A35300BCDAAE /* Main.storyboard */; };
+		31F0104F1F82A35300BCDAAE /* TapQuest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31F0104D1F82A35300BCDAAE /* TapQuest.xcdatamodeld */; };
+		31F010511F82A35300BCDAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F010501F82A35300BCDAAE /* Assets.xcassets */; };
+		31F010541F82A35300BCDAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */; };
+		31F0105F1F82A35300BCDAAE /* TapQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0105E1F82A35300BCDAAE /* TapQuestTests.swift */; };
+		31F0106A1F82A35300BCDAAE /* TapQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F010691F82A35300BCDAAE /* TapQuestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31F0105B1F82A35300BCDAAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F0103B1F82A35200BCDAAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31F010421F82A35200BCDAAE;
+			remoteInfo = TapQuest;
+		};
+		31F010661F82A35300BCDAAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F0103B1F82A35200BCDAAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31F010421F82A35200BCDAAE;
+			remoteInfo = TapQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31F010431F82A35300BCDAAE /* TapQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F010461F82A35300BCDAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31F010481F82A35300BCDAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31F0104B1F82A35300BCDAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31F0104E1F82A35300BCDAAE /* TapQuest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TapQuest.xcdatamodel; sourceTree = "<group>"; };
+		31F010501F82A35300BCDAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31F010531F82A35300BCDAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31F010551F82A35300BCDAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F0105A1F82A35300BCDAAE /* TapQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F0105E1F82A35300BCDAAE /* TapQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapQuestTests.swift; sourceTree = "<group>"; };
+		31F010601F82A35300BCDAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F010651F82A35300BCDAAE /* TapQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F010691F82A35300BCDAAE /* TapQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapQuestUITests.swift; sourceTree = "<group>"; };
+		31F0106B1F82A35300BCDAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F010401F82A35200BCDAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010571F82A35300BCDAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010621F82A35300BCDAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31F0103A1F82A35200BCDAAE = {
+			isa = PBXGroup;
+			children = (
+				31F010451F82A35300BCDAAE /* TapQuest */,
+				31F0105D1F82A35300BCDAAE /* TapQuestTests */,
+				31F010681F82A35300BCDAAE /* TapQuestUITests */,
+				31F010441F82A35300BCDAAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31F010441F82A35300BCDAAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F010431F82A35300BCDAAE /* TapQuest.app */,
+				31F0105A1F82A35300BCDAAE /* TapQuestTests.xctest */,
+				31F010651F82A35300BCDAAE /* TapQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F010451F82A35300BCDAAE /* TapQuest */ = {
+			isa = PBXGroup;
+			children = (
+				31F010461F82A35300BCDAAE /* AppDelegate.swift */,
+				31F010481F82A35300BCDAAE /* ViewController.swift */,
+				31F0104A1F82A35300BCDAAE /* Main.storyboard */,
+				31F010501F82A35300BCDAAE /* Assets.xcassets */,
+				31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */,
+				31F010551F82A35300BCDAAE /* Info.plist */,
+				31F0104D1F82A35300BCDAAE /* TapQuest.xcdatamodeld */,
+			);
+			path = TapQuest;
+			sourceTree = "<group>";
+		};
+		31F0105D1F82A35300BCDAAE /* TapQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				31F0105E1F82A35300BCDAAE /* TapQuestTests.swift */,
+				31F010601F82A35300BCDAAE /* Info.plist */,
+			);
+			path = TapQuestTests;
+			sourceTree = "<group>";
+		};
+		31F010681F82A35300BCDAAE /* TapQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31F010691F82A35300BCDAAE /* TapQuestUITests.swift */,
+				31F0106B1F82A35300BCDAAE /* Info.plist */,
+			);
+			path = TapQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31F010421F82A35200BCDAAE /* TapQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F0106E1F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuest" */;
+			buildPhases = (
+				31F0103F1F82A35200BCDAAE /* Sources */,
+				31F010401F82A35200BCDAAE /* Frameworks */,
+				31F010411F82A35200BCDAAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapQuest;
+			productName = TapQuest;
+			productReference = 31F010431F82A35300BCDAAE /* TapQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31F010591F82A35300BCDAAE /* TapQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F010711F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuestTests" */;
+			buildPhases = (
+				31F010561F82A35300BCDAAE /* Sources */,
+				31F010571F82A35300BCDAAE /* Frameworks */,
+				31F010581F82A35300BCDAAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F0105C1F82A35300BCDAAE /* PBXTargetDependency */,
+			);
+			name = TapQuestTests;
+			productName = TapQuestTests;
+			productReference = 31F0105A1F82A35300BCDAAE /* TapQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31F010641F82A35300BCDAAE /* TapQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F010741F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuestUITests" */;
+			buildPhases = (
+				31F010611F82A35300BCDAAE /* Sources */,
+				31F010621F82A35300BCDAAE /* Frameworks */,
+				31F010631F82A35300BCDAAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F010671F82A35300BCDAAE /* PBXTargetDependency */,
+			);
+			name = TapQuestUITests;
+			productName = TapQuestUITests;
+			productReference = 31F010651F82A35300BCDAAE /* TapQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31F0103B1F82A35200BCDAAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Verisure;
+				TargetAttributes = {
+					31F010421F82A35200BCDAAE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					31F010591F82A35300BCDAAE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 31F010421F82A35200BCDAAE;
+					};
+					31F010641F82A35300BCDAAE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 31F010421F82A35200BCDAAE;
+					};
+				};
+			};
+			buildConfigurationList = 31F0103E1F82A35200BCDAAE /* Build configuration list for PBXProject "TapQuest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31F0103A1F82A35200BCDAAE;
+			productRefGroup = 31F010441F82A35300BCDAAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31F010421F82A35200BCDAAE /* TapQuest */,
+				31F010591F82A35300BCDAAE /* TapQuestTests */,
+				31F010641F82A35300BCDAAE /* TapQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31F010411F82A35200BCDAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F010541F82A35300BCDAAE /* LaunchScreen.storyboard in Resources */,
+				31F010511F82A35300BCDAAE /* Assets.xcassets in Resources */,
+				31F0104C1F82A35300BCDAAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010581F82A35300BCDAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010631F82A35300BCDAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31F0103F1F82A35200BCDAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F0104F1F82A35300BCDAAE /* TapQuest.xcdatamodeld in Sources */,
+				31F010491F82A35300BCDAAE /* ViewController.swift in Sources */,
+				31F010471F82A35300BCDAAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010561F82A35300BCDAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F0105F1F82A35300BCDAAE /* TapQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F010611F82A35300BCDAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F0106A1F82A35300BCDAAE /* TapQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31F0105C1F82A35300BCDAAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31F010421F82A35200BCDAAE /* TapQuest */;
+			targetProxy = 31F0105B1F82A35300BCDAAE /* PBXContainerItemProxy */;
+		};
+		31F010671F82A35300BCDAAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31F010421F82A35200BCDAAE /* TapQuest */;
+			targetProxy = 31F010661F82A35300BCDAAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31F0104A1F82A35300BCDAAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F0104B1F82A35300BCDAAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F010531F82A35300BCDAAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31F0106C1F82A35300BCDAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31F0106D1F82A35300BCDAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31F0106F1F82A35300BCDAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31F010701F82A35300BCDAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31F010721F82A35300BCDAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapQuest.app/TapQuest";
+			};
+			name = Debug;
+		};
+		31F010731F82A35300BCDAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapQuest.app/TapQuest";
+			};
+			name = Release;
+		};
+		31F010751F82A35300BCDAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapQuest;
+			};
+			name = Debug;
+		};
+		31F010761F82A35300BCDAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWLF3BPNYU;
+				INFOPLIST_FILE = TapQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.flimsy.TapQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F0103E1F82A35200BCDAAE /* Build configuration list for PBXProject "TapQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F0106C1F82A35300BCDAAE /* Debug */,
+				31F0106D1F82A35300BCDAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F0106E1F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F0106F1F82A35300BCDAAE /* Debug */,
+				31F010701F82A35300BCDAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F010711F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F010721F82A35300BCDAAE /* Debug */,
+				31F010731F82A35300BCDAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F010741F82A35300BCDAAE /* Build configuration list for PBXNativeTarget "TapQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F010751F82A35300BCDAAE /* Debug */,
+				31F010761F82A35300BCDAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		31F0104D1F82A35300BCDAAE /* TapQuest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31F0104E1F82A35300BCDAAE /* TapQuest.xcdatamodel */,
+			);
+			currentVersion = 31F0104E1F82A35300BCDAAE /* TapQuest.xcdatamodel */;
+			path = TapQuest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 31F0103B1F82A35200BCDAAE /* Project object */;
+}
