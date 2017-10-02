@@ -15,6 +15,7 @@
 		31F010541F82A35300BCDAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */; };
 		31F0105F1F82A35300BCDAAE /* TapQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0105E1F82A35300BCDAAE /* TapQuestTests.swift */; };
 		31F0106A1F82A35300BCDAAE /* TapQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F010691F82A35300BCDAAE /* TapQuestUITests.swift */; };
+		31F010781F82AA9800BCDAAE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F010771F82AA9800BCDAAE /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		31F010651F82A35300BCDAAE /* TapQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F010691F82A35300BCDAAE /* TapQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapQuestUITests.swift; sourceTree = "<group>"; };
 		31F0106B1F82A35300BCDAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F010771F82AA9800BCDAAE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				31F010461F82A35300BCDAAE /* AppDelegate.swift */,
 				31F010481F82A35300BCDAAE /* ViewController.swift */,
+				31F010771F82AA9800BCDAAE /* GameViewController.swift */,
 				31F0104A1F82A35300BCDAAE /* Main.storyboard */,
 				31F010501F82A35300BCDAAE /* Assets.xcassets */,
 				31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F010781F82AA9800BCDAAE /* GameViewController.swift in Sources */,
 				31F0104F1F82A35300BCDAAE /* TapQuest.xcdatamodeld in Sources */,
 				31F010491F82A35300BCDAAE /* ViewController.swift in Sources */,
 				31F010471F82A35300BCDAAE /* AppDelegate.swift in Sources */,

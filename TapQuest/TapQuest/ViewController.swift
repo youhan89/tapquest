@@ -10,14 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonStartGame: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func buttonStartGamePressed(_ sender: Any) {
+        let game : GameViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameView") as! GameViewController;
+        self.present(game, animated: true, completion: nil);
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
