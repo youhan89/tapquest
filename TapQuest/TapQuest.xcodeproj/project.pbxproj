@@ -101,12 +101,8 @@
 		31F010451F82A35300BCDAAE /* TapQuest */ = {
 			isa = PBXGroup;
 			children = (
-				31F010461F82A35300BCDAAE /* AppDelegate.swift */,
-				31F010481F82A35300BCDAAE /* ViewController.swift */,
-				31F010771F82AA9800BCDAAE /* GameViewController.swift */,
-				31F0104A1F82A35300BCDAAE /* Main.storyboard */,
-				31F010501F82A35300BCDAAE /* Assets.xcassets */,
-				31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */,
+				31F0107A1F82B44E00BCDAAE /* Utils */,
+				31F010791F82B43D00BCDAAE /* ViewControllers */,
 				31F010551F82A35300BCDAAE /* Info.plist */,
 				31F0104D1F82A35300BCDAAE /* TapQuest.xcdatamodeld */,
 			);
@@ -129,6 +125,26 @@
 				31F0106B1F82A35300BCDAAE /* Info.plist */,
 			);
 			path = TapQuestUITests;
+			sourceTree = "<group>";
+		};
+		31F010791F82B43D00BCDAAE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31F010481F82A35300BCDAAE /* ViewController.swift */,
+				31F010771F82AA9800BCDAAE /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		31F0107A1F82B44E00BCDAAE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				31F010461F82A35300BCDAAE /* AppDelegate.swift */,
+				31F010501F82A35300BCDAAE /* Assets.xcassets */,
+				31F0104A1F82A35300BCDAAE /* Main.storyboard */,
+				31F010521F82A35300BCDAAE /* LaunchScreen.storyboard */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

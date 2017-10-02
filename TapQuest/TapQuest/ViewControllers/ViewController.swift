@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initiateStartButtonAnimation();
+    }
+    
+    private func initiateStartButtonAnimation() {
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: [UIViewAnimationOptions.curveEaseIn, .repeat, .autoreverse, .allowUserInteraction], animations: {
+            self.buttonStartGame.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
+            
+        },completion: nil)
     }
     
     @IBAction func buttonStartGamePressed(_ sender: Any) {
