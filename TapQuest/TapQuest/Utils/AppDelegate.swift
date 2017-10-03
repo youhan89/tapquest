@@ -3,7 +3,6 @@
 //  TapQuest
 //
 //  Created by Johan Sögaard on 2017-10-02.
-//  Copyright © 2017 Verisure. All rights reserved.
 //
 
 import UIKit
