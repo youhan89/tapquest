@@ -20,14 +20,17 @@ class GameViewController: UIViewController {
     @IBOutlet weak var buttonGameTile09: UIButton!
     
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
     
+    @IBOutlet weak var statusButton: UIButton!
     var tiles : [Int : UIButton] = [:]
-    var timer : Timer = Timer();
+    var uiTimer : Timer = Timer()
     var litTile : Int = -1
     var score : Int = 0
     var lives : Int = 3
-    var gameRunning : Bool = false;
+    var gameRunning : Bool = false
+    
+    var countdownTimer : Timer = Timer()
+    var countdown = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +52,31 @@ class GameViewController: UIViewController {
         ]
         
         self.score = 0
-        self.statusLabel.text = "";
+        self.setStatusTitle(title: "")
+        
+        self.countdownTimer.invalidate()
+        self.countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.countdownUpdate), userInfo: nil, repeats: true)
+    }
+    
+    func setStatusTitle( title : String ) {
+        self.statusButton.setTitle(title, for: .normal)
+    }
+    
+    @objc func countdownUpdate() {
+        if(gameRunning){
+            self.setStatusTitle(title: String(format: "%0.2d", countdown))
+            countdown = countdown - 1
+        }
+        if(countdown < 1) {
+            gameRunning = false
+            uiTimer.invalidate()
+            countdownTimer.invalidate()
+        }
     }
     
     func refreshGameLoop() {
-        self.timer.invalidate();
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        self.uiTimer.invalidate()
+        self.uiTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         self.gameRunning = true;
     }
     
@@ -63,12 +85,11 @@ class GameViewController: UIViewController {
             let previousTile : UIButton = self.tiles[litTile]!
             previousTile.setImage(#imageLiteral(resourceName: "box_empty"), for: UIControlState.normal)
         }
-        
         self.litTile = self.generateNextTile()
         
         let newTile : UIButton = self.tiles[litTile]!
         newTile.setImage(#imageLiteral(resourceName: "box_filled"), for: UIControlState.normal)
-    }
+    } 
     
     func refreshScoreLabel(score : Int) {
         self.scoreLabel.text = String(format: "%06d", score)
@@ -84,10 +105,15 @@ class GameViewController: UIViewController {
         return newTile
     }
     
+    @IBAction func onStatusButtonClick(_ sender: Any) {
+    
+    }
+    
+    
     func gameOver() {
         self.gameRunning = false;
-        self.timer.invalidate();
-        self.statusLabel.text = "Game Over!";
+        self.uiTimer.invalidate();
+        self.setStatusTitle(title: "Game Over")
     }
     
     @IBAction func tilePressed(_ sender: Any) {
@@ -111,7 +137,7 @@ class GameViewController: UIViewController {
             self.refreshScoreLabel(score: score)
             
             
-            self.timer.fire()
+            self.uiTimer.fire()
             self.refreshGameLoop()
         }
     }
