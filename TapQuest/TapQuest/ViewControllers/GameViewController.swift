@@ -77,19 +77,27 @@ class GameViewController: UIViewController {
     
     func refreshGameLoop() {
         self.uiTimer.invalidate()
-        self.uiTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        self.uiTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         self.gameRunning = true;
     }
     
     @objc func update(){
         if(litTile != -1){
             let previousTile : UIButton = self.tiles[litTile]!
-            previousTile.setImage(#imageLiteral(resourceName: "box_empty"), for: UIControlState.normal)
+            UIView.transition(with: previousTile, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+                previousTile.setImage(#imageLiteral(resourceName: "box_empty"), for: UIControlState.normal)
+            }) { (done) in
+                
+            }
         }
         self.litTile = self.generateNextTile()
         
         let newTile : UIButton = self.tiles[litTile]!
-        newTile.setImage(#imageLiteral(resourceName: "box_filled"), for: UIControlState.normal)
+        UIView.transition(with: newTile, duration: 0.5, options: .transitionFlipFromRight, animations: {
+            newTile.setImage(#imageLiteral(resourceName: "box_filled"), for: UIControlState.normal)
+        }) { (done) in
+            
+        }
     }
     
     func refreshScoreLabel(score : Int) {
