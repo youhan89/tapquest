@@ -71,6 +71,7 @@ class GameViewController: UIViewController {
             gameRunning = false
             uiTimer.invalidate()
             countdownTimer.invalidate()
+            gameOver()
         }
     }
     
@@ -89,7 +90,7 @@ class GameViewController: UIViewController {
         
         let newTile : UIButton = self.tiles[litTile]!
         newTile.setImage(#imageLiteral(resourceName: "box_filled"), for: UIControlState.normal)
-    } 
+    }
     
     func refreshScoreLabel(score : Int) {
         self.scoreLabel.text = String(format: "%06d", score)
@@ -106,7 +107,9 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func onStatusButtonClick(_ sender: Any) {
-    
+        dismiss(animated: true) {
+            
+        }
     }
     
     
